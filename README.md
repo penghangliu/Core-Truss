@@ -2,7 +2,7 @@
 
 - 'make' to compile
 
-- './nucleus <graphfile> 11 NO' to run decomposition;
+- './nucleus filename 11 NO' to run decomposition;
   
 - 'python P3.py P3_filename' to generate VI plot;
 
