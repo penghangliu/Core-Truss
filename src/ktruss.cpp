@@ -214,6 +214,19 @@ void base_ktruss (Graph& graph, bool hierarchy, edge nEdge, vector<vertex>& K, v
             edg++;
         }
     fclose(P2);
+    
+    string vfile3 = "Truss_" + vfile;
+    ofstream PT (vfile3);
+    for (size_t i = 0; i < graph.size(); i++){
+        PT << i << "\t" <<  KK[i] << "\t" << graph[i].size();
+        for (size_t j = 0; j < graph[i].size(); j++) {
+            int v = graph[i][j];
+            edge f = getEdgeId (i, v, xel, el, graph);
+            PT << "\t" << K[f];
+        }
+        PT << endl;
+    }
+    PT.close();
 
 //    const auto p2 = chrono::steady_clock::now();
 //

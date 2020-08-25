@@ -21,12 +21,12 @@ L_core = []
 S_core = []
 for line in lines:
     p = line.split()
-    truss.append(int(p[0]))
-    tri.append(int(p[1]))
-    S_deg.append(min(int(p[2]),int(p[3])))
-    L_deg.append(max(int(p[2]),int(p[3])))
-    S_core.append(min(int(p[4]),int(p[5])))
-    L_core.append(max(int(p[4]),int(p[5])))
+    truss.append(int(p[2]))
+    tri.append(int(p[3]))
+    S_deg.append(min(int(p[4]),int(p[5])))
+    L_deg.append(max(int(p[4]),int(p[5])))
+    S_core.append(min(int(p[6]),int(p[7])))
+    L_core.append(max(int(p[6]),int(p[7])))
 f.close()
 truss = np.array(truss)
 tri = np.array(tri)
