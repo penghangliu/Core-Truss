@@ -2,7 +2,7 @@
 
 - 'make' to compile
 
-- './nucleus filename 11 NO' to run the core and truss decomposition;
+- './nucleus filename 11 NO' to run the core and truss decomposition; this will generates Truss_filename, P2_filename and P3_filenames.
   
 - 'python P3.py P3_filename' to generate VI plot;
 
