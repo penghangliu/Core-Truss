@@ -2,10 +2,10 @@
 
 - 'make' to compile
 
-- './nucleus filename 11 NO' to run the core and truss decomposition; this will generates Truss_filename, P2_filename, and P3_filenames.
+- './nucleus email-Eu-core.txt 11 NO' to run the core and truss decomposition; this will generate Truss_email-Eu-core.txt, P2_email-Eu-core.txt, and P3_email-Eu-core.txt.
   
-- 'python P3.py P3_filename' to generate VI plot;
+- 'python P3.py P3_email-Eu-core.txt' to generate VI plot;
 
-- 'python P2.py P2_filename' to generate EI plot;
+- 'python P2.py P2_email-Eu-core.txt to generate EI plot;
 
-- 'python anomaly_detection.py Truss_filename' to do the anomaly detection, which generates the elbow plot, the histogram of core number distributions in clusters, and a .csv file containing the outliers.
+- 'python anomaly_detection.py Truss_email-Eu-core.txt' to do the anomaly detection, which generates the elbow plot, the histogram of core number distributions in clusters, and a .csv file containing the outliers.
